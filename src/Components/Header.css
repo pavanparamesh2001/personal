@@ -1,0 +1,19 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  #navbar {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  

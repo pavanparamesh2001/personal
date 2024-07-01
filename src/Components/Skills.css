@@ -1,0 +1,18 @@
+.dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  .light {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  
+  .dark .services {
+    color: white;
+  }
+  
+  .light .services {
+    color: #333;
+  }

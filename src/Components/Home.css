@@ -1,0 +1,172 @@
+.home-container {
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark {
+    background-color: #333; 
+    color: #fff; 
+  }
+  
+  .light {
+    background-color: #fff; 
+    color: #333; 
+  }
+  .home-container {
+    padding: 20px;
+  }
+  
+  .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .resume-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .magical-button {
+    animation: magicalEffect 1.5s infinite;
+  }
+  
+  @keyframes magicalEffect {
+    0% {
+      box-shadow: 0 0 5px #fff, 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff;
+    }
+    100% {
+      box-shadow: 0 0 5px #fff, 0 0 10px #007bff  
+    }
+  }
+  
+  
+  
+  #Home {
+    background: linear-gradient(145deg, #081a1e, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Round Image with Glowing Effect */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.3), 0 0 60px rgba(0, 255, 255, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Additional Styles */
+  .heading {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  .undersection {
+    font-size: 1.5em;
+  }
+  
+  .resume-button {
+    background-color: #00ffff;
+    color: #081a1e;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #00cccc;
+  }
+  
+  .magical-button {
+    cursor: pointer;
+  }
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    70% {
+      width: 100%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blinkCursor {
+    0% {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    50% {
+      border-right-color: transparent;
+    }
+    100% {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .heading {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkCursor 500ms steps(44) infinite normal,
+               fadeInOut 4s ease-in-out 0s 1 normal;
+  }
+  
+  .undersection {
+    animation: fadeIn 5s ease-in 5s 1 normal forwards;
+  }
+  
+  
